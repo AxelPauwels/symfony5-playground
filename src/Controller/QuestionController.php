@@ -12,7 +12,7 @@ use Symfony\Component\Routing\Annotation\Route;
 class QuestionController extends AbstractController
 {
     /**
-     * @Route("/")
+     * @Route("/", name="app_homepage")
      * @return Response
      */
     public function homepage()
@@ -21,7 +21,7 @@ class QuestionController extends AbstractController
     }
 
     /**
-     * @Route("/questions/{slug}")
+     * @Route("/questions/{slug}", name="app_question_show")
      * @param $slug
      * @return Response
      */
