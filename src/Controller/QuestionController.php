@@ -34,6 +34,8 @@ class QuestionController extends AbstractController
             'This is answer 3'
         ];
 
+//        dd($slug, $this);
+        dump($slug, $this);
 
         return $this->render('question/show.html.twig', [
             'question' => ucwords(str_replace('-', ' ', $slug)),
