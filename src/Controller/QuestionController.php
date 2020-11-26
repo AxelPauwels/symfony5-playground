@@ -17,7 +17,7 @@ class QuestionController extends AbstractController
      */
     public function homepage()
     {
-        return new Response('What a controller ! With annotation routes instead of using routes.yaml');
+        return $this->render('question/homepage.html.twig');
     }
 
     /**
