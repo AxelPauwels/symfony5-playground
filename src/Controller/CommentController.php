@@ -11,8 +11,11 @@ use Symfony\Component\Routing\Annotation\Route;
 class CommentController extends AbstractController
 {
 
+    // methods="POST"   will only allow POST requests
+    // <\d+>            will only allow 'id' to be a decimal
+    // <up\down>        will only allow 'direction' to be "up" or "down"
     /**
-     * @Route("/comments/{id}/vote/{direction}")
+     * @Route("/comments/{id<\d+>}/vote/{direction<up\down>}", methods="POST")
      */
     public function commentVote($id, $direction)
     {
@@ -21,7 +24,7 @@ class CommentController extends AbstractController
         if ($direction === 'up') {
             $currentVoteCount = rand(7, 100);
         } else {
-            $currentVoteCount = rand(0, 5);
+            $currentVoteCount = random_int(0, 5);
         }
 
         // -> Returns with Content-Type: application/json
