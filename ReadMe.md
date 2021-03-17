@@ -58,3 +58,11 @@ All autowire-able services
 (var/cache/prof)
 
 ```./bin/console cache:clear```
+
+##Chapter 9
+
+```./bin/console debug:autowiring Markdown```
+
+```./bin/console debug:autowiring Markdown --all```
+
+
