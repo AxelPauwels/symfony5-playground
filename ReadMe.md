@@ -40,5 +40,11 @@ All autowire-able services
 
 ```./bin/console debug:autowiring```
 
+##Chapter 6
+
+```./bin/console config:dump FrameworkBundle```
+
+```./bin/console config:dump FrameworkBundle cache```
 
 
+```./bin/console debug:config FrameworkBundle cache```
