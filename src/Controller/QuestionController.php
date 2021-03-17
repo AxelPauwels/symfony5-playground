@@ -45,12 +45,13 @@ class QuestionController extends AbstractController
             'Maybe... try saying the spell backwards?',
         ];
         $questionText = "I've been turned into a cat, any **thoughts** on how to turn back? While I'm **adorable**, I don't really care for cat food.";
+
         $parsedQuestionText = $cache->get('markdown_'.md5($questionText), function () use ($markdownParser,$questionText){
             return $markdownParser->transformMarkdown($questionText);
         });
 
         // dd($slug, $this);
-        // dump($slug, $this);
+         dd($markdownParser);
 
         return $this->render('question/show.html.twig', [
             'question' => ucwords(str_replace('-', ' ', $slug)),
