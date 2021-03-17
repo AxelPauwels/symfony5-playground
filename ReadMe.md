@@ -48,3 +48,8 @@ All autowire-able services
 
 
 ```./bin/console debug:config FrameworkBundle cache```
+
+##Chapter 7
+
+```./bin/console debug:router```
+
