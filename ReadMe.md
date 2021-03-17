@@ -53,3 +53,8 @@ All autowire-able services
 
 ```./bin/console debug:router```
 
+##Chapter 8
+
+(var/cache/prof)
+
+```./bin/console cache:clear```
