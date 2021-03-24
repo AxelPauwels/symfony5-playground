@@ -73,6 +73,7 @@ All autowire-able services
 
 ```./bin/console debug:container --parameters --env=prod```
 
-##Chapter 12
+##Chapter 15
+```./bin/console debug:autowiring log```
 
 
