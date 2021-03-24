@@ -3,7 +3,7 @@
 or
 ```symfony server:start```
 
-#Chapter info
+#Symfony 5 Fundamentals
 ##Chapter 1
 List the available Service-objects:
 
@@ -67,4 +67,8 @@ All autowire-able services
 
 ##Chapter 10
 
+```./bin/console debug:container --parameters```
 
+```./bin/console debug:container --parameters --env=dev```
+
+```./bin/console debug:container --parameters --env=prod```
