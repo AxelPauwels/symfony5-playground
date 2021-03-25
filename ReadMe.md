@@ -76,4 +76,6 @@ All autowire-able services
 ##Chapter 15
 ```./bin/console debug:autowiring log```
 
+##Chapter 18
+```./bin/console about```
 
