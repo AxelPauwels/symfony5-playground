@@ -95,4 +95,13 @@ All autowire-able services
 
 ##Chapter 21
 
-```src/Command/RandomSpellCommand.php```
+```./bin/console make:command```
+
+(custom created command:)
+
+```./bin/console app:random-spell axel --yell```
+
+```tail var/log/dev.log```
+
+
+
