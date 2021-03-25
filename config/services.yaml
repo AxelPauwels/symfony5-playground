@@ -34,5 +34,5 @@ services:
     # add more service definitions when explicit configuration is needed
     # please note that last definitions always *replace* previous ones
 
-    #creates an service-alias , check by debug: ./bin.console autowiring log
+    #creates an service-alias , check by debug: ./bin/console debug:autowiring log
     Psr\Log\LoggerInterface $mdLogger: '@monolog.logger.markdown'

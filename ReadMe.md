@@ -103,5 +103,9 @@ All autowire-able services
 
 ```tail var/log/dev.log```
 
+##Chapter 22
+
+```./bin/console debug:twig```
+
 
 
