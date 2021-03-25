@@ -79,3 +79,7 @@ All autowire-able services
 ##Chapter 18
 ```./bin/console about```
 
+##Chapter 19
+```./bin/console secret:set SENTRY_DSN```
+
+```./bin/console secret:set SENTRY_DSN --env=prod```
