@@ -123,7 +123,8 @@ or better:
 
 ```docker-compose exec database mysql -u root --password=password```
 
+##Chapter 4
 
-
+```symfony var:export --multiline```
 
 
