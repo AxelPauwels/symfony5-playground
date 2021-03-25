@@ -92,3 +92,7 @@ All autowire-able services
 ```./bin/console secret:list --env=prod```
 
 ```./bin/console secret:list --env=prod --reveal```
+
+##Chapter 21
+
+```src/Command/RandomSpellCommand.php```
