@@ -27,7 +27,7 @@ class MarkdownHelper
             $this->logger->info('Meow!');
         }
 
-        if(!$this->isDebug){
+        if($this->isDebug){
             return $this->markdownParser->transformMarkdown($source);
         }
 
