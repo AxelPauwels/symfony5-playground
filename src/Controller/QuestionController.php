@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace App\Controller;
 
 use App\Entity\Question;
+use App\Repository\QuestionRepository;
 use App\Service\MarkdownHelper;
 use Doctrine\ORM\EntityManagerInterface;
 use Psr\Log\LoggerInterface;
@@ -29,15 +30,18 @@ class QuestionController extends AbstractController
      * @Route("/", name="app_homepage")
      * @return Response
      */
-    public function homepage(Environment $twigEnvironment)
+    public function homepage(QuestionRepository $questionRepository)
     {
+        $questions = $questionRepository->findAllAskedOrderedByNewest();
 
         // the "return $this->render" at the bottom just uses symfony 'Services'..."Objects that do something.."
         // it replaces this:
         // $html = $twigEnvironment->render('question/homepage.html.twig');
         // return new Response($html);
 
-        return $this->render('question/homepage.html.twig');
+        return $this->render('question/homepage.html.twig',[
+            'questions' => $questions
+        ]);
     }
 
     /**
